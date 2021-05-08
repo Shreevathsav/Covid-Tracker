@@ -1,243 +1,218 @@
-<html >
-  <meta name="viewport" content="width=device-width,intial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
-  <link rel="stylesheet" href="http://passarelliautomacao.com.br/js/tether-1.3.3/dist/css/tether.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-</head>
-<style >
-row{
-  padding: 10%;
-}
-.footer-col{
-text-align: center;
-}
-.footer-col h3{
-color: black;
-}
-.footer-col p{
-color: black;
+    <title>Vaccine</title>
 
-/* font-weight: bold; */
-}
-.footer-col a{
-text-align: left;
-text-decoration: none;
-}
-#footer{
-background-color: white;
-padding: 2%;
-}
-</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
 
-<body style="background-color: #0093E9; text-align:center;
-background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)
-;">
+    <style>
+     .bd-placeholder-img {
+       font-size: 1.125rem;
+       text-anchor: middle;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       user-select: none;
+     }
 
+     @media (min-width: 768px) {
+       .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+       }
+     }
 
-<header>
-  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light" style="background-color:white!important;position: relative;">
-    <div class="container-fluid" style="padding-right: 3%;">
-      <a class="navbar-brand" href="#" style="margin-right: 0%;font-family: 'Comfortaa', cursive; font-size:30px;"><img style="margin-left: -2px;
-         /* max-width: 70%;
-         /* min-width: 333px; */
-         height: 45;
-         width: auto;" class="header" src="Images/RIT_Logo.png"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: auto;">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" style="margin-left:auto;" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0" style="align-items: flex-end;">
-          <li class="nav-item">
-            <a style="
-    font-size: 25px;
-    "class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a style="
-            width: max-content;
-    font-size: 25px;
-    " class="nav-link" href="#">Oxygen Cylinders</a>
-          </li>
-          <li class="nav-item">
-            <a style="
-    font-size: 25px;
-  ;"class="nav-link" href="#" tabindex="-1" aria-disabled="true">Vaccine</a>
-          </li>
-          <li class="nav-item">
-            <a style="
-    font-size: 25px;
-    ;"class="nav-link" href="#" tabindex="-1" aria-disabled="true">Remdesivir</a>
-          </li>
-          <li class="nav-item">
-            <a style="
-    font-size: 25px;
-    "class="nav-link" href="#" tabindex="-1" aria-disabled="true">Helpline</a>
-          </li>
-        </ul>
+     }
+     .display-5{
+       text-align: center;
+       margin-bottom:2%
+       color: blue;
+       font-weight:bold;
+     }
+     .p-5{
+       margin: 5%;
+       padding: 4%;
+       border: 1px solid black;
+     }
+     .form-control{
+       margin-bottom:2%;
+     }
+     .filter{
+       margin-top:3%;
+     }
+     .grid{
+       margin-top:3%;
+     }
+     .pad{
+       padding:1%;
+       /* text-align:center; */
+     }
+      .row{
+        font-weight:500;
+      }
+      .col-md-auto{
+        color:green;
+      }
+      .hospitals{
+        margin-top:3%;
+      }
 
+   </style>
+   <link rel="icon" type="image/x-icon" href="http://example.com/favicon.ico" />
+  </head>
+  <body>
+    <div class="p-5 mb-4  rounded-3">
+   <div class="container-fluid py-5">
+     <h2 style="color:#77acf1; text-align:center; font-weight:bold;" class="display-5">Get to Know Vaccine Availability</h2>
+     <label for="exampleDataList" class="form-label">State</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+<datalist id="datalistOptions">
+  <option value="San Francisco">
+  <option value="New York">
+  <option value="Seattle">
+  <option value="Los Angeles">
+  <option value="Chicago">
+</datalist>
+<label for="exampleDataList" class="form-label">District</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+<datalist id="datalistOptions">
+  <option value="San Francisco">
+  <option value="New York">
+  <option value="Seattle">
+  <option value="Los Angeles">
+  <option value="Chicago">
+</datalist>
+<button type="button" class="btn btn-primary">Search</button>
+<div class="filter">
+
+  <button type="button" class="btn btn-outline-dark">18+</button>
+  <button style=" display:inline;" type="button" class="btn btn-outline-dark">45+</button>
+  <button style=" display:inline;" type="button" class="btn btn-outline-dark">Covishield</button>
+  <button style=" display:inline;" type="button" class="btn btn-outline-dark">Covaxin</button>
+</div>
+<div class="grid">
+  <div class="container">
+
+    <div class="row ">
+      <div class="col">
+        8-May-2021
+      </div>
+      <div class="col-md-auto ">
+        1000
+      </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-primary btn-sm" type="submit" name="button">Click<span class="glyphicon glyphicon-arrow-right"></span></button>
       </div>
     </div>
-  </nav>
-</header>
+  </div>
+  <hr>
+  <div class="container">
 
-
-
-
-
-<div class="row" style="margin-right: 0%;
-    margin-top: -24%;
-    margin-left: 0px;
-    height: 96%;">
-<div class="col" style="font-family: 'Comfortaa', cursive;
-    font-size: 30px;
-    /* margin-left: 2%; */
-    margin-right: 0%;
-    margin-top: 1%;
-    padding: 0%;
-    height: 90%;
-    width: 100%;">
-
-
-
-    <main>
-
-      <div id="myCarousel" style="width: 100%;
-    margin-top: 2%;
-    /* margin-left: -1%; */
-    height: 100%;" class="carousel slide" data-bs-ride="carousel">
-
-        <div class="carousel-inner">
-          <div class="carousel-item active" style="background:url(https://images.pexels.com/photos/5878517/pexels-photo-5878517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);height: 103%;
-    display: block;
-    width: 119%;
-    margin-left: 0%;">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="0%" height="0%" /></svg>
-
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Covid-19 <span style="color:red">vaccine</span></h1>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
+    <div class="row ">
+      <div class="col">
+        8-May-2021
       </div>
+      <div class="col-md-auto ">
+        1000
+      </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-primary btn-sm" type="submit" name="button">Click<span class="glyphicon glyphicon-arrow-right"></span></button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+
+    <div class="row ">
+      <div class="col">
+        8-May-2021
+      </div>
+      <div class="col-md-auto ">
+        1000
+      </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-primary btn-sm" type="submit" name="button">Click<span class="glyphicon glyphicon-arrow-right"></span></button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+
+    <div class="row ">
+      <div class="col">
+        8-May-2021
+      </div>
+      <div class="col-md-auto ">
+        1000
+      </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-primary btn-sm" type="submit" name="button">Click<span class="glyphicon glyphicon-arrow-right"></span></button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+
+    <div class="row ">
+      <div class="col">
+        8-May-2021
+      </div>
+      <div class="col-md-auto ">
+        1000
+      </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-primary btn-sm" type="submit" name="button">Click<span class="glyphicon glyphicon-arrow-right"></span></button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+
+    <div class="row ">
+      <div class="col">
+        8-May-2021
+      </div>
+      <div class="col-md-auto ">
+        1000
+      </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-primary btn-sm" type="submit" name="button">Click<span class="glyphicon glyphicon-arrow-right"></span></button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+
+    <div class="row ">
+      <div class="col">
+        8-May-2021
+      </div>
+      <div class="col-md-auto ">
+        1000
+      </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-primary btn-sm" type="submit" name="button">Click<span class="glyphicon glyphicon-arrow-right"></span></button>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+<div class="hospitals">
+  <div class="card">
+  <div style="background-color:blue; color white;" class="card-header">
+    <h5 style="color:white;">Book on CoWin</h5>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Hospital Name</h5>
+    <p class="card-text"><img src="https://img.icons8.com/pastel-glyph/64/000000/worldwide-location--v1.png"/>Location,Pin</p>
+    <a href="#" class="btn btn-primary">Book</a>
+  </div>
 </div>
 </div>
 
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing" >
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Amazon</h2>
-        <p style="">No of Vaccine :</p>
-        <p style="">Place :</p>
-        <p style="">Contact Info:</p>
-        <p><a class="btn btn-secondary" href="https://www.google.co.in/maps/place/Rajalakshmi+Institute+of+Technology/@13.039173,80.042807,17z/data=!3m1!4b1!4m5!3m4!1s0x3a528bae35449d29:0x37d13f08d672385b!8m2!3d13.039173!4d80.0449957">Location</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Flipkart</h2>
-        <p style="">No of Vaccine :</p>
-        <p style="">Place :</p>
-        <p style="">Contact Info:</p>
-        <p><a class="btn btn-secondary" href="https://www.google.co.in/maps/place/Rajalakshmi+Institute+of+Technology/@13.039173,80.042807,17z/data=!3m1!4b1!4m5!3m4!1s0x3a528bae35449d29:0x37d13f08d672385b!8m2!3d13.039173!4d80.0449957">Location</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>SnapDeal</h2>
-        <p style="">No of Vaccine :</p>
-        <p style="">Place :</p>
-        <p style="">Contact Info:</p>
-        <p><a class="btn btn-secondary" href="https://www.google.co.in/maps/place/Rajalakshmi+Institute+of+Technology/@13.039173,80.042807,17z/data=!3m1!4b1!4m5!3m4!1s0x3a528bae35449d29:0x37d13f08d672385b!8m2!3d13.039173!4d80.0449957">Location</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Amazon</h2>
-        <p style="">No of Vaccine :</p>
-        <p style="">Place :</p>
-        <p style="">Contact Info:</p>
-        <p><a class="btn btn-secondary" href="https://www.google.co.in/maps/place/Rajalakshmi+Institute+of+Technology/@13.039173,80.042807,17z/data=!3m1!4b1!4m5!3m4!1s0x3a528bae35449d29:0x37d13f08d672385b!8m2!3d13.039173!4d80.0449957">Location</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Flipkart</h2>
-        <p style="">No of Vaccine :</p>
-        <p style="">Place :</p>
-        <p style="">Contact Info:</p>
-        <p><a class="btn btn-secondary" href="https://www.google.co.in/maps/place/Rajalakshmi+Institute+of+Technology/@13.039173,80.042807,17z/data=!3m1!4b1!4m5!3m4!1s0x3a528bae35449d29:0x37d13f08d672385b!8m2!3d13.039173!4d80.0449957">Location</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>SnapDeal</h2>
-        <p style="">No of Vaccine :</p>
-        <p style="">Place :</p>
-        <p style="">Contact Info:</p>
-        <p><a class="btn btn-secondary" href="https://www.google.co.in/maps/place/Rajalakshmi+Institute+of+Technology/@13.039173,80.042807,17z/data=!3m1!4b1!4m5!3m4!1s0x3a528bae35449d29:0x37d13f08d672385b!8m2!3d13.039173!4d80.0449957">Location</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-    </div
-    <!-- START THE FEATURETTES -->
-
-
-
-  <!-- FOOTER -->
-
-  <section id="footer">
-    <div class="container">
-      <div class="row footer-row">
-        <div class="col-md-4 footer-col">
-          <h3>Address</h3>
-          <p>No.123, ABC Nagar,<br />DEF Road, XYZ Colony, <br />PQR,Chennai - 600000</p>
-        </div>
-        <div class="col-md-4 footer-col">
-          <h3>Contact</h3>
-          <p>1234567890</p>
-          <p>0987654321</p>
-
-        </div>
-        <div class="col-md-4 footer-col">
-          <h3>Follow us</h3>
-          <p>facebook</p>
-          <p>instragram</p>
-          <p>youtube</p>
-          <p>twitter</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-   <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-  <script src="http://passarelliautomacao.com.br/js/tether-1.3.3/dist/js/tether.min.js"></script>
-  <script src="D:\atom\BootStrap\js\bootstrap.min.js"></script>
-    <script src="style.js"></script>
-
-
-</body>
+   </div>
+ </div>
+  </body>
 </html>
